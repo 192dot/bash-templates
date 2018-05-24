@@ -1,0 +1,2 @@
+# in current directory (.), find the unique groups which all files and directories belong to
+find . | xargs -d '\n' stat -c "%G" | sort | uniq
